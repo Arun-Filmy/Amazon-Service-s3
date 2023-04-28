@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA6KZTVXHXHZXFMFQ3
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+
+application:
+  bucket:
+    name: s3storageprogramfromspring
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      fileSizeThreshold: 2MB
+      maxFileSize: 5MB
+      maxRequestSize: 10MB
+
+server:
+  port: 9093

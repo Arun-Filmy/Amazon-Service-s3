@@ -1,0 +1,33 @@
+#cloud:
+#  aws:
+#    credentials:
+#      access-key: AKIA6KZTVXHXHZXFMFQ3
+#      secret-key: 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
+#    region:
+#      static: ap-south-1
+#    stack:
+#      auto: false
+#
+#application:
+#  bucket:
+#    name: s3storageprogramfromspring
+
+access-key: AKIA6KZTVXHXHZXFMFQ3
+secret-key: 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
+bucketName: s3storageprogramfromspring
+region.static: ap-south-1
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydatabase
+    username: pawan
+    password: root123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 9092
