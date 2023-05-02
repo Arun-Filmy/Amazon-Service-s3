@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FileUploadDAO extends JpaRepository<FileUpload, Long> {
+   void deleteByFileName(String fileName);
 }
 
